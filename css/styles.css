@@ -1,0 +1,247 @@
+/* General body styles */
+body {
+    background-color: #f8f9fa; /* Light gray background */
+    color: #343a40; /* Dark gray text color */
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #e03b00; /* Dark orange-red */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1030; /*navbar is on top of other elements */
+}
+
+.navbar-brand {
+    color: #ffffff !important; /* White color */
+    font-weight: 600; /* Bold font */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Text shadow for readability */
+    font-size: 1.4rem; /* Larger font size */
+}
+
+.navbar .nav-link {
+    color: #ffffff !important; /* White color */
+    font-weight: 600;   /* Bold font */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Text shadow for readability */
+    font-size: 1.2rem; /* Larger font size */
+}
+
+.navbar .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white color on hover */
+    color: #ffc107 !important; /* Yellow color on hover */
+    border-radius: 5px; /* Rounded corners on hover */
+}
+
+/* Button styles */
+.btn-primary {
+    background-color: #FF4500; /* Dark orange-red */
+    border-color: #FF4500; /* Dark orange-red */
+}
+
+.btn-primary:hover {
+    background-color: #e03b00; /* Darker shade on hover */
+    border-color: #e03b00; /* Darker shade on hover */
+}
+
+.btn-secondary {
+    background-color: #343a40; /* Dark gray */
+    color: #e2e6e9; /* Light gray text color */
+}
+
+.btn-secondary:hover {
+    background-color: #555; /* Darker shade on hover */
+    color: #e2e6e9; /* Light gray text color */
+}
+
+/* Home section styles */
+/* Home section styles */
+.home-section {
+    position: relative; /* Relative positioning for absolute overlay */
+    width: 100%; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Hide overflow content */
+    background: url('../images/Exclusive offer.png') no-repeat center center; /* Background image */
+    background-size: cover; /* Cover the container */
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the overlay */
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+    padding: 4rem; /* Increase padding for larger overlay */
+    border-radius: 10px;
+    width: 80%; /*  width to be larger */
+    max-width: 1000px; /*  overlay does not stretch too wide */
+}
+
+.overlay h1 {
+    font-size: 3rem; /* Increase font size for better visibility */
+    margin-bottom: 1rem;
+}
+
+.overlay p {
+    font-size: 1.5rem; /* Increase font size for better readability */
+    margin-bottom: 2rem;
+}
+
+.btn-call-to-action {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #FF4500; /* Call-to-action button color */
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem; /* Increase font size for better visibility */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-call-to-action:hover {
+    background-color: #e03b00; /* Darker shade on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .home-section {
+        background-size:auto; /* image maintains its aspect ratio */
+        height: 70vh;
+    }
+    .overlay {
+        padding: 2rem; /*  padding on smaller screens */
+        width: 90%; /*  width for smaller screens */
+    }
+
+    .overlay h1 {
+        font-size: 2rem; /*  font size for smaller screens */
+    }
+
+    .overlay p {
+        font-size: 1.2rem; /*  font size for smaller screens */
+    }
+
+    .btn-call-to-action {
+        font-size: 1.2rem; /*  font size for smaller screens */
+        padding: 10px 20px; /*  padding for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .overlay {
+        padding: 1rem; /* Further  padding on extra small screens */
+        width: 95%; /*  overlay is responsive */
+    }
+
+    .overlay h1 {
+        font-size: 1.5rem; /* Further  font size for extra small screens */
+    }
+
+    .overlay p {
+        font-size: 1rem; /* Further  font size for extra small screens */
+    }
+
+    .btn-call-to-action {
+        font-size: 1rem; /* Further  font size for extra small screens */
+        padding: 8px 16px; /* Further  padding for extra small screens */
+    }
+}
+
+/* Products section styles */
+.products-section .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #FF4500;
+}
+
+.products-section h2{
+    color: #FF4500;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.products-section .card-text {
+    font-size: 1rem;
+    color: #555;
+    margin-top: auto;
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 767.98px) {
+    .card:hover {
+        transform: scale(1.01);
+    }
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #e03b00;
+}
+
+.footer a, .footer p {
+    color: #ffffff;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.footer a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffc107;
+    border-radius: 5px;
+}
+
+/* Cart modal styles */
+.modal-content {
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+
+.modal-header, .modal-footer {
+    border: none;
+}
+
+.modal-body h5 {
+    color: #FF4500;
+}
+
+/* Login and Signup Form Styles */
+.signup-form, .login-form {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(26, 21, 21, 0.1);
+    padding: 2rem;
+}
+
+.signup-form h2, .login-form h2 {
+    color: #FF4500;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.form-control {
+    border-radius: 4px;
+    border-color: #ddd;
+}
+
+/* Responsive Design */
+@media (max-width: 767.98px) {
+    .signup-form, .login-form {
+        padding: 1rem; /* padding for smaller screens */
+    }
+
+    .form-control {
+        font-size: 0.9rem; /*  font size for smaller screens */
+    }
+}
