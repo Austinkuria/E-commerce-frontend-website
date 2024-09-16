@@ -1,8 +1,8 @@
-### **E-Commerce frontend**
+### **E-Commerce frontend website**
 
 #### **Overview**
 
-This is a fully responsive e-commerce website built using modern web technologies like **HTML, CSS, JavaScript, Bootstrap**, and **jQuery**. The website allows users to browse products, view detailed product information, add items to a shopping cart, and manage their cart. It includes a basic user authentication system with sign-up and login functionalities. 
+This is a fully responsive e-commerce frontend website built using modern web technologies like **HTML, CSS, JavaScript, Bootstrap**, and **jQuery**. The website allows users to browse products, view detailed product information, add items to a shopping cart, and manage their cart. It includes a basic user authentication system with sign-up and login functionalities. 
 
 The design emphasizes user experience, with features such as a sleek product listing interface, a dynamic cart system, and fully responsive design for seamless browsing across different device sizes.
 
