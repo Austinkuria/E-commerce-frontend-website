@@ -1,6 +1,6 @@
-### **Project Title: E-Commerce Website**
+### **E-Commerce frontend**
 
-#### **Project Description:**
+#### **Overview**
 
 This is a fully responsive e-commerce website built using modern web technologies like **HTML, CSS, JavaScript, Bootstrap**, and **jQuery**. The website allows users to browse products, view detailed product information, add items to a shopping cart, and manage their cart. It includes a basic user authentication system with sign-up and login functionalities. 
 
